@@ -67,6 +67,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
        /* Called when a touch begins */
         
     }
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        var touchLocation = touch.locationInNode(self)
+        
+        if touchLocation.y < 100 { touchLocation.y = 100 }
+        else if touchLocation.y > 668 { touchLocation.y = 668 }
+        
+        self.player.position = touchLocation
+    }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
@@ -79,6 +89,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     // MARK: - Local Methods
+    
+    func didBeginContact(contact: SKPhysicsContact) {
+        let explosionEmitterNode = SKEmitterNode(fileNamed: "explosion.sks")!
+        explosionEmitterNode.position = self.player.position
+        self.addChild(explosionEmitterNode)
+        
+        self.player.removeFromParent()
+
+        self.gameOver = true
+    }
     
     func createEnemy() {
         self.possibleEnemies = GKRandomSource.sharedRandom().arrayByShufflingObjectsInArray(self.possibleEnemies) as! [String]
