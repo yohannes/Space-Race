@@ -26,6 +26,8 @@
 		6578E6521BC152E400A27948 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6578E6461BC152E400A27948 /* Starfield.sks */; settings = {ASSET_TAGS = (); }; };
 		6578E6531BC152E400A27948 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 6578E6471BC152E400A27948 /* tv.png */; settings = {ASSET_TAGS = (); }; };
 		6578E6541BC152E400A27948 /* tv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6578E6481BC152E400A27948 /* tv@2x.png */; settings = {ASSET_TAGS = (); }; };
+		65B199801BC38A4900AF6E9F /* Array+Shuffling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1997F1BC38A4900AF6E9F /* Array+Shuffling.swift */; settings = {ASSET_TAGS = (); }; };
+		65B199821BC38ABF00AF6E9F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B199811BC38ABE00AF6E9F /* Helper.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		6578E6461BC152E400A27948 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 		6578E6471BC152E400A27948 /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = "<group>"; };
 		6578E6481BC152E400A27948 /* tv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv@2x.png"; sourceTree = "<group>"; };
+		65B1997F1BC38A4900AF6E9F /* Array+Shuffling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffling.swift"; sourceTree = "<group>"; };
+		65B199811BC38ABE00AF6E9F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				6578E6311BC1503C00A27948 /* Assets.xcassets */,
 				6578E6331BC1503C00A27948 /* LaunchScreen.storyboard */,
 				6578E6361BC1503C00A27948 /* Info.plist */,
+				65B1997F1BC38A4900AF6E9F /* Array+Shuffling.swift */,
+				65B199811BC38ABE00AF6E9F /* Helper.swift */,
 				6578E63C1BC152E400A27948 /* Multimedia Assets */,
 			);
 			path = "Space Race";
@@ -199,7 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B199801BC38A4900AF6E9F /* Array+Shuffling.swift in Sources */,
 				6578E62B1BC1503C00A27948 /* GameScene.swift in Sources */,
+				65B199821BC38ABF00AF6E9F /* Helper.swift in Sources */,
 				6578E62D1BC1503C00A27948 /* GameViewController.swift in Sources */,
 				6578E6271BC1503C00A27948 /* AppDelegate.swift in Sources */,
 			);
@@ -351,6 +359,7 @@
 				6578E63B1BC1503C00A27948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
